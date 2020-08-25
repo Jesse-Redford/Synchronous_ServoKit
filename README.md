@@ -11,6 +11,9 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
   - Setting upper and lower limits for servo actuation range 
   - Mapping servo positions from (0-180)deg to (-pi/2,pi/2)radians
 
+### Process Illiustartion
+<img src="https://github.com/Jesse-Redford/PolarPlots/blob/master/gussian_surface.png" width="450" height="250"> <img src="https://github.com/Jesse-Redford/PolarPlots/blob/master/gussian_surface_with_defects.png" width="450" height="250"> 
+
 ### Usage Example
 
      import Synchronous_ServoKit
