@@ -1,21 +1,19 @@
 # Synchronous_ServoKit
 
-#### Project Description
+### Project Description
 An extension library for Adafruit_CircuitPython_ServoKit that allows users to control the velocity of multiple positional servos in a synchronized fashion. The project aims to provide usesr more sophisticated levels of servo control without needing to develop the low level code. 
 
-#### Features
+### Software Dependencies and Requirments
+ - pip install r.requirments.txt
+
+### Features
 - Acts as a stand alone interpertuer class which provides execution and automatic handling other the following. 
   - Sending velocity arguments in units of deg/sec or rads/sec to positional servos 
   - Moving multiple positional servos in a synchronized fashion over a fixed time interval
   - Setting upper and lower limits for servo actuation range 
   - Mapping servo positions from (0-180)deg to (-pi/2,pi/2)radians
-  
 
-#### Software Dependencies and Requirments
- - pip install r.requirments.txt
-  
-
-#### Usage Example
+### Usage Example
 
      import Synchronous_ServoKit
   
