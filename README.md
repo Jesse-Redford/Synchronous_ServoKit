@@ -13,8 +13,12 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="250"> 
 </p>
 
+### Software Dependencies and Requirments
+    - pip install r.requirments.txt
+    - pip install Synchronous_ServoKit
+    
 
-#### Examples 
+### Examples 
 
 <p align="center">
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/synchronous_control_example.gif" width="500" height="175"> 
@@ -22,9 +26,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 </p>
 
 
-#### Software Dependencies and Requirments
-    - pip install r.requirments.txt
-    - pip install Synchronous_ServoKit
+
 
 
 ### Usage Example
