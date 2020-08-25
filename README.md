@@ -36,7 +36,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 -->
 
 
-## Usage Examples
+### Usage Examples
 
      import Synchronous_ServoKit
   
