@@ -10,7 +10,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 
 
 <p align="center">
-<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="300"> 
+<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="260"> 
 </p>
 
 ### Examples 
