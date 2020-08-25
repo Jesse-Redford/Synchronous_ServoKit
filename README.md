@@ -21,12 +21,25 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
  <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/varying_rates_synchronous_control_example.gif" width="500" height="175">
 </p>
 
-### Software Dependencies and Requirments
+
+## Installation and Setup
+   ### Software Dependencies
+   - adafruit_cicuitpython_servokit
+   
+   ### Requirments
     - pip install r.requirments.txt
+    
+    
+   ### Package Installation 
     - pip install Synchronous_ServoKit
+    
+    
+   ### Test 
+    - cd working directiory
+    - python Synchronous_ServoKit_calibrate.py
 
 
-### How to use
+## Usage Examples
 
      import Synchronous_ServoKit
   
