@@ -10,7 +10,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 
 
 <p align="center">
-<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="250"> 
+<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="300"> 
 </p>
 
 ### Examples 
@@ -24,22 +24,16 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
    ### Hardware Requrments
    - Rasberry Pi 3B+
    - adafruit 16channel servo sheild
-   - 2 or more positional servos
+   - 1 or more positional servos
    
-   ### Software Dependencies
-   - adafruit_cicuitpython_servokit
-   
-   ### Requirments
-    - pip install r.requirments.txt
+   ### Installation Software Dependencies
+      - pip install r.requirments.txt
+      - pip install Synchronous_ServoKit
     
-    
-   ### Package Installation 
-    - pip install Synchronous_ServoKit
-    
-    
-   ### Test 
-    - cd working directiory
-    - python Synchronous_ServoKit_calibrate.py
+  <!--- ### Test 
+      - cd working directiory
+      - python Synchronous_ServoKit_calibrate.py 
+-->
 
 
 ## Usage Examples
