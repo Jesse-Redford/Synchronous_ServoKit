@@ -18,22 +18,21 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 #### Usage Example
 
   '''
-  import Synchronous_ServoKit
+     import Synchronous_ServoKit
   
-  # Define channel servo is connected to, accutation range, reset position, and desired units you would like to use 
-  servo_one = Synchronous_ServoKit.configure(channel = 1, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
-  servo_two = Synchronous_ServoKit.configure(channel = 2, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
+     # Define channel servo is connected to, accutation range, reset position, and desired units you would like to use 
+     servo_one = Synchronous_ServoKit.configure(channel = 1, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
+     servo_two = Synchronous_ServoKit.configure(channel = 2, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
   
-  # Reset servo to there "home" reset positions
-  positions = Synchronous_ServoKit.reset(servo_one,servo_two) 
+     # Reset servo to there "home" reset positions
+     positions = Synchronous_ServoKit.reset(servo_one,servo_two) 
   
-  # Define control arguments 
-  speed_servo_one = 30; speed_servo_two = 30; execution_time = 1 
-  arguments = speed_servo_one,speed_servo_two,execution_time
+      # Define control arguments 
+      speed_servo_one = 30; speed_servo_two = 30; execution_time = 1 
+      arguments = speed_servo_one,speed_servo_two,execution_time
   
-  # Send arugments to be executed and get back new position 
-  new_positions = Synchronous_ServoKit.execute(servo_one,servo_two,arguments)
-  
+      # Send arugments to be executed and get back new position 
+      new_positions = Synchronous_ServoKit.execute(servo_one,servo_two,arguments)
   '''
    
 
