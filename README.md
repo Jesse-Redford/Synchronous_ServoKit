@@ -21,8 +21,11 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
  <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/varying_rates_synchronous_control_example.gif" width="500" height="175">
 </p>
 
-
-## Installation and Setup
+   ### Hardware Requrments
+   - Rasberry Pi 3B+
+   - adafruit 16channel servo sheild
+   - 2 or more positional servos
+   
    ### Software Dependencies
    - adafruit_cicuitpython_servokit
    
