@@ -17,7 +17,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 
 #### Usage Example
 
-  """
+  '''
   import Synchronous_ServoKit
   
   # Define channel servo is connected to, accutation range, reset position, and desired units you would like to use 
@@ -34,7 +34,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
   # Send arugments to be executed and get back new position 
   new_positions = Synchronous_ServoKit.execute(servo_one,servo_two,arguments)
   
-   """
+  '''
    
 
   
