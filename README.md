@@ -1,4 +1,6 @@
-# Synchronous_ServoKit
+## Synchronous_ServoKit
+
+### Project Description
 An extension library for Adafruit_CircuitPython_ServoKit that allows users to control the velocity of multiple positional servos in a synchronized fashion. The project aims to provide usesr more sophisticated levels of servo control without needing to develop the low level code. 
 
 <p align="center">
