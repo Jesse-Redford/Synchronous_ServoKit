@@ -14,7 +14,7 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 </p>
 
 ### Examples 
-- Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to positional servos and having them execute the prescribed velocities over a fixed time interval (in this case 1 sec) in a synchronous fashion. Notice in the second video (non-symmetrical case), the head joint rotates at half the rate of the tail joint.
+Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to positional servos and having them execute the prescribed velocities over a fixed time interval (in this case 1 sec) in a synchronous fashion. Notice in the second video (non-symmetrical case), the head joint rotates at half the rate of the tail joint.
 
 <p align="center">
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/synchronous_control_example.gif" width="500" height="175"> 
