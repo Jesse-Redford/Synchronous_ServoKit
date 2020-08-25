@@ -14,8 +14,8 @@ An extension library for Adafruit_CircuitPython_ServoKit that allows users to co
 </p>
 
 <p align="center">
-<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/synchronous_control_example.gif" width="1050" height="250"> 
- <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/varying_rates_synchronous_control_example.gif" width="1050" height="250">
+<img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/synchronous_control_example.gif" width="500" height="150"> 
+ <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/varying_rates_synchronous_control_example.gif" width="500" height="150">
 </p>
 
 
