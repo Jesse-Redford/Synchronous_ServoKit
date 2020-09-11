@@ -37,11 +37,12 @@ Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to 
 
 
 ### How to use
-For each servo in your system, you will need to create an instance of each servo and assign the following
+For each servo in your system you will need to create an instance of each servo and assign the following
+
 - Reference number 
-  -- This will determine what order your arguments need to be in
+     - This will determine what order your arguments need to be in
 - Channel Number
-  -- This will assostate what channel the servo is connected 
+     - This will assostate what channel the servo is connected 
 - Joint Limits
   -- This will ensure that the servo stays within a given positonal range
 - Reset position
