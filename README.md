@@ -36,6 +36,19 @@ Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to 
 -->
 
 
+### How to use
+For each servo in your system, you will need to create an instance of each servo and assign the following
+- Reference number 
+  -- This will determine what order your arguments need to be in
+- Channel Number
+  -- This will assostate what channel the servo is connected 
+- Joint Limits
+  -- This will ensure that the servo stays within a given positonal range
+- Reset position
+  -- The position you would like the servo to return to if the system is reset 
+- Speed constant
+  -- Obtained from specs on servo, speed constant = t/60deg, used to approximate the delay between 1deg steps 
+
 ### Usage Examples
 
      import Synchronous_ServoKit
