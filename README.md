@@ -17,6 +17,7 @@ Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to 
 <p align="center">
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/synchronous_control_example.gif" width="500" height="175"> 
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/varying_rates_synchronous_control_example.gif" width="500" height="175">
+ 
 <img src=https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/Controlling_3_servos.gif" width="500" height="175">
 </p>
 
