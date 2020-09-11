@@ -36,19 +36,86 @@ Sending incrementally increasing (periodic) velocity arguments (in rads/sec) to 
 -->
 
 
-### How to use
-For each servo in your system you will need to create an instance of each servo and assign the following
+### Setup Instructions 
+
+After complettign installation and configuring your hardware import the package into your python script
+
+        import import Synchronous_ServoKit
+            
+Next, create an instance for each servo in your system and configure the following parameters for each of them. 
 
 - Reference number 
      - This will determine what order your arguments need to be in
 - Channel Number
      - This will assostate what channel the servo is connected 
 - Joint Limits
-  -- This will ensure that the servo stays within a given positonal range
+     - This will ensure that the servo stays within a given positonal range
 - Reset position
-  -- The position you would like the servo to return to if the system is reset 
+     - The position you would like the servo to return to if the system is reset 
 - Speed constant
-  -- Obtained from specs on servo, speed constant = t/60deg, used to approximate the delay between 1deg steps 
+     - Obtained from specs on servo, speed constant = t/60deg, used to approximate the delay between 1deg steps 
+  
+      # Define channel servo is connected to, accutation range, reset position, ect
+      servo_one = Synchronous_ServoKit.configure(channel = 1, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
+      servo_two = Synchronous_ServoKit.configure(channel = 2, lower_servo_limit = 35, upper_servo_limit = 145, reset_position = 90, units='rads')
+      servo_three = ....
+      servo_four = ....
+      ect ...
+  
+Now constuct your system by defining a variable, in this case I will define it is "system", which is an array contained each servo instance
+
+      system = [servo_one,servo_two,servo_three, ... ]
+ 
+You can inspect the current system configuration by simply calling the get_info method. This will return a list of the parapemeters assosistaed with each servo 
+defined in your system. 
+
+      system_info = Synchronous_ServoKit.get_info(system)
+      print(system_info)
+      
+You will notice that the current_positions of the servos will be listed as None, this will update after initating a system reset by simply writing
+       
+       # move all servos in system to there reset_positions
+       Synchronous_ServoKit.reset(system)
+       
+       # re-check system info 
+       system_info = Synchronous_ServoKit.get_info(system)
+       print(system_info)
+       
+The current_positions of each servo should now be equal to the reset_positions you defined. You can also check the info or position of an indivdual servo by writing
+       
+       servo_one_info = servo_one.info
+       print(servo_one_info)
+       
+       servo_one_position = servo_one.position
+       print(servo_one_position)
+       
+If you want to save the current system configuration to a file just use
+       
+       Synchronous_ServoKit.save(system,file_name = 'Name of your system')
+       
+Now to reload this configuration 
+       
+       system = Synchronous_ServoKit.load(file_name = 'name of your system')
+       
+After completeting the steps above, you can now control your system using velosity arguments in a syrncounous fashion by simply writing
+      
+      # Get current positions of servos
+      print(system.positions)
+      
+      # Define speeds for each servo (units deg/sec) and an execution time (units = sec) 
+      speed_servo_one = 30; speed_servo_two = -30; execution_time = 1 
+      arguments = [speed_servo_one,speed_servo_two,speed_servo_three,.....] 
+  
+      # Send arugments to be executed and get back new position 
+      Synchronous_ServoKit.execute(system,arguments,execution_time)
+      
+      # Get new positions of servos
+      print(system.positions)
+      
+You should verify the new positions agree with the arguments. It is recommend that you calibrate the system 
+
+      system.calibrate(min_speed,max_speed,execution_time)
+
 
 ### Usage Examples
 
