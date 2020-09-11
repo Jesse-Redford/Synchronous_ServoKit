@@ -3,11 +3,9 @@
 ### Project Description
 An extension library for Adafruit_CircuitPython_ServoKit that allows users to control the velocity of multiple positional servos in a synchronized fashion. The project aims to provide users more sophisticated levels of servo control without needing to develop the low level code. The package acts as a stand alone interpertuer providing execution and automatic handling of the following. 
 
- - Sending velocity arguments in units of deg/sec or rads/sec to positional servos 
- - Moving multiple positional servos in a synchronized fashion over a fixed time interval
- - Setting upper and lower limits for servo actuation range 
- - Mapping servo positions from (0-180) deg to (-pi/2,pi/2 )radians
-
+ - Sending velocity arguments in units of deg/sec to positional servos 
+ - Move multiple positional servos in a synchronized fashion over a fixed time interval
+ - enforce upper and lower limits for servo actuation range 
 
 <p align="center">
 <img src="https://github.com/Jesse-Redford/Synchronous_ServoKit/blob/master/(1)%20Process_Diagram_Synchronous_ServoKit.PNG" width="1050" height="260"> 
